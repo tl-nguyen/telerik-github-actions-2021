@@ -31,6 +31,9 @@ jobs:
       - name: Lint with pycodestyle
         run: |
           pycodestyle *.py
+      - name: Unit testing
+        run: |
+          python3 -m doctest factorial.py
       - name: Build Container Image
         run: |
           echo "Building a container image..."
